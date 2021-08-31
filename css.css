@@ -1,0 +1,85 @@
+
+.upload-file__input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 0.4px;
+    height: 0.4px;
+}
+
+.upload-file__label {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 240px;
+    background-color: rgba(0, 200, 200, 0.2);
+    border: 2px dashed #150B22;
+    padding: 9px 49px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.upload-file__icon {
+    width: 30px;
+    height: auto;
+    margin-right: 11px;
+}
+
+.upload-file__label .upload-file__text,
+.upload-file__label .upload-file__icon path {
+    transition: .25s ease;
+}
+
+.upload-file__label:hover .upload-file__text {
+    color: #58862D;
+}
+
+.upload-file__label:hover .upload-file__icon path {
+    fill: #58862D;
+}
+
+.upload-file__label:hover {
+    border: 2px dashed #58862D;
+}
+   
+.upload-file__wrapper{
+    text-align: center;
+}
+
+/* drag and drop - "hover" */
+.upload-file__label.hover .upload-file__text {
+    color: #ffb300;
+}
+.upload-file__label.hover .upload-file__icon path {
+    fill: #ffb300;
+}
+.upload-file__label.hover {
+    border: 2px dashed #ffb300;
+}
+
+/* drag and drop - ошибка */
+.upload-file__label.error .upload-file__text {
+    color: #d32f2f;
+}
+.upload-file__label.error .upload-file__icon path {
+    fill: #d32f2f;
+}
+.upload-file__label.error {
+    border: 2px dashed #d32f2f;
+}
+
+/* drag and drop - файл(ы) успешно перетянут(ы) */
+.upload-file__label.drop .upload-file__text {
+    color: #388e3c;
+}
+.upload-file__label.drop .upload-file__icon path {
+    fill: #388e3c;
+}
+.upload-file__label.drop {
+    border: 2px dashed #388e3c;
+}
+  
+
